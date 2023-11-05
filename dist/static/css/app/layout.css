@@ -1,0 +1,260 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./assets/css/reset.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./assets/css/fonts.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+	font-family: 'Onest';
+	src: url(./_next/static/media/Onest-VariableFont_wght.5be9d587.ttf) format('truetype-variations');
+	font-weight: 100 900;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./assets/css/variables.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+:root{
+	--main-header-height: max(22.5vh, 30rem);
+	--main-header-height-mobile: max(22.5dvh, 30rem);
+
+	--size-tin: 1rem;
+	--size-sml: 2rem;
+	--size-mid: 3rem;
+	--size-big: 6rem;
+	--size-lrg: 12rem;
+	--size-con: 17.5vw;
+
+	--color-60: #F7F7F9;
+	--color-60-second: #F9F7F7;
+	--color-30: #DBE2EF;
+	--color-30-second: #BFC9DA;
+	--color-30-third: #BFC9DA;
+	--color-10: #3F72AF;
+	--color-10-second: #5387C7;
+	--color-text-dark: #242424;
+	--color-text-light: #FFFFFF;
+	--color-bg: #FFFFFF;
+	--color-border: rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 1200px) {
+	:root{
+		--size-con: 10vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	:root{
+		--size-con: 3rem;
+	}
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 4pt;
+}
+
+body{
+	background: var(--color-bg);
+	font-family: 'Onest', sans-serif;
+	font-size: 3rem;
+}
+
+.main-container{
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+/* main header */
+.main-header-container{
+	height: var(--main-header-height);
+	height: var(--main-header-height-mobile);
+	background: var(--color-60);
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.main-header-top{
+	padding: var(--size-sml) var(--size-con);
+	border-bottom: 1px solid var(--color-border);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.main-header{
+	flex: 1 1;
+	padding: var(--size-sml) var(--size-con);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: var(--size-big);
+}
+
+.main-header-logo{
+	position: relative;
+	flex: 1 1;
+}
+
+.main-header-logo img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-position: left;
+	object-fit: contain;
+}
+
+nav.main-header-nav{
+	padding: 0 var(--size-con);
+	background: var(--color-30);
+	border-bottom: 1rem solid var(--color-30-third);
+	display: flex;
+	flex-flow: row nowrap;
+	overflow-y: scroll;
+}
+
+nav.main-header-nav a.nav-link,
+nav.main-header-nav a.nav-link:link,
+nav.main-header-nav a.nav-link:visited{
+	padding: var(--size-mid);
+	font-size: 3.5rem;
+	font-weight: 300;
+	color: var(--color-text-light);
+	text-decoration: none;
+	display: block;
+}
+
+nav.main-header-nav a.nav-link:hover:not(.active){
+	background: var(--color-30-second);
+}
+
+nav.main-header-nav a.nav-link.active{
+	background: var(--color-30-third);
+}
+
+.main-header-nav-toggle{
+	align-self: center;
+	display: none;
+	position: relative;
+	min-height: 10rem;
+	min-width: 10rem;
+	background: var(--color-30);
+	border: none;
+	cursor: pointer;
+	transition: background .2s;
+}
+
+.main-header-nav-toggle div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	height: 12.5%;
+	width: 75%;
+	background: #FFFFFF;
+	transition: translate .2s, rotate .6s;
+}
+
+.main-header-nav-toggle div:nth-child(1){ translate: -50% calc(-50% - 2.5rem); }
+.main-header-nav-toggle div:nth-child(3){ translate: -50% calc(-50% + 2.5rem); }
+
+.main-header-nav-toggle:hover,
+.nav-active .main-header-nav-toggle{
+	background: var(--color-30-second);
+}
+
+.nav-active .main-header-nav-toggle div:nth-child(1){ translate: -50% -50%; rotate: -45deg; }
+.nav-active .main-header-nav-toggle div:nth-child(2){ opacity: 0; }
+.nav-active .main-header-nav-toggle div:nth-child(3){ translate: -50% -50%; rotate: 45deg; }
+
+@media only screen and (max-width: 900px){
+	html{
+		font-size: 3.5pt;
+		transition: font-size .2s;
+	}
+
+	/* main header */
+	nav.main-header-nav{
+		position: absolute;
+		top: var(--main-header-height);
+		top: var(--main-header-height-mobile);
+		left: 0;
+		padding: 0;
+		height: calc(100vh - var(--main-header-height));
+		height: calc(100dvh - var(--main-header-height-mobile));
+		width: min(100vw, 500px);
+		flex-direction: column;
+		overflow-y: unset;
+		overflow-x: scroll;
+		z-index: 2;
+		translate: -100% 0;
+		pointer-events: none;
+		transition: translate .2s;
+	}
+
+	.nav-active nav.main-header-nav{
+		translate: 0 0;
+		pointer-events: all;
+	}
+
+	.main-header-nav-toggle{
+		display: block;
+	}
+}

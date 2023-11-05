@@ -1,0 +1,35 @@
+:root{
+	--main-header-height: max(22.5vh, 30rem);
+	--main-header-height-mobile: max(22.5dvh, 30rem);
+
+	--size-tin: 1rem;
+	--size-sml: 2rem;
+	--size-mid: 3rem;
+	--size-big: 6rem;
+	--size-lrg: 12rem;
+	--size-con: 17.5vw;
+
+	--color-60: #F7F7F9;
+	--color-60-second: #F9F7F7;
+	--color-30: #DBE2EF;
+	--color-30-second: #BFC9DA;
+	--color-30-third: #BFC9DA;
+	--color-10: #3F72AF;
+	--color-10-second: #5387C7;
+	--color-text-dark: #242424;
+	--color-text-light: #FFFFFF;
+	--color-bg: #FFFFFF;
+	--color-border: rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 1200px) {
+	:root{
+		--size-con: 10vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	:root{
+		--size-con: 3rem;
+	}
+}
