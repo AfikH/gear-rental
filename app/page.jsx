@@ -1,11 +1,19 @@
 import HeroCarousel from '@/components/home/HeroCarousel';
 
 import styles from './page.module.css';
+import FeaturedProducts from '@/components/products/FeaturedProducts';
 import Products from '@/components/products/Products';
 
 const Home = () => (
 	<div className="page">
-		<HeroCarousel className={styles.carousel} slideClassName={styles.carouselSlide} />
+		<section className={styles.carouselContainer}>
+			<HeroCarousel className={styles.carousel} slideClassName={styles.carouselSlide} />
+			<article className={styles.carouselOverlay}>
+				<h1>Gear Rental</h1>
+				<p>Professional cinematography & photography gear for rent.</p>
+			</article>
+		</section>
+		<FeaturedProducts className="featured-products-home" />
 		<Products className="products-home" />
 	</div>
 );

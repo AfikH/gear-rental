@@ -10,6 +10,7 @@ import { productCategories } from './productsCategories';
 import '@/assets/css/products.css';
 
 const Products = ({className, category = ''}) => {
+	const [loading, setLoading] = useState(true);
 	const [options, setOptions] = useState({
 		searchQuery: '',
 		category
@@ -26,28 +27,34 @@ const Products = ({className, category = ''}) => {
 			if(options.category && !product.categories.includes(options.category.toLowerCase())) return false;
 			return true;
 		}));
+		setLoading(false);
 	}, [options]);
 
 	return(
 		<div className={`products ${className}`}>
 			<div className="products-search">
 				<select defaultValue={options.category} onChange={e => setOptions({...options, category: e.target.value})}>
-					<option value="">All</option>
-					<option value="cameras">Cameras</option>
-					<option value="lenses">Lenses</option>
-					<option value="accesories">Accesories</option>
-					<option value="sound">Sound</option>
-					<option value="lighting">Lighting</option>
-					<option value="grip">Grip</option>
+					{productCategories.map((productCategory, index) => <option key={index} value={productCategory.value}>{productCategory.name}</option>)}
 				</select>
-				<ProductsSearch setSearchQuery={setSearchQuery} />
+				<ProductsSearch setSearchQuery={setSearchQuery} setLoading={setLoading} />
 			</div>
 			<div className="products-list grid">
-			{
-			filteredProducts.length > 0 ?
-				filteredProducts.map((product, index) => <Product key={index} product={product} />)
+			{loading ?
+				<div className="fill-grid">
+					<div className="lds-ellipsis">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
 			:
-				<span>Could not find any matching products.</span>
+				filteredProducts.length > 0 ?
+					filteredProducts.map((product, index) => <Product key={index} product={product} />)
+				:
+					<div className="fill-grid">
+						<span className="message">Could not find any matching products.</span>
+					</div>
 			}
 			</div>
 		</div>

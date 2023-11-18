@@ -1,7 +1,13 @@
-.carousel{
+.carouselContainer{
+	position: relative;
 	height: calc(100vh - var(--main-header-height));
 	height: calc(100dvh - var(--main-header-height-mobile));
-	/* background: #000000; */
+	z-index: 0;
+	background: var(--color-30-third);
+}
+
+.carousel{
+	height: 100%;
 }
 
 .carouselSlide{
@@ -28,4 +34,31 @@
 	background: linear-gradient(180deg, #000000 0%, var(--color-10) 100%);
 	opacity: 0.75;
 	z-index: -1;
+}
+
+.carouselOverlay{
+	padding: var(--size-lrg) var(--size-con) calc(var(--size-lrg) * 3) var(--size-con);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: var(--size-mid);
+	z-index: 1;
+	pointer-events: none;
+	overflow: hidden;
+	color: var(--color-gc-10);
+}
+
+.carouselOverlay h1{
+	font-size: 16rem;
+	font-weight: 700;
+}
+
+.carouselOverlay p{
+	font-size: 6rem;
 }

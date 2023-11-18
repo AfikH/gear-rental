@@ -78,8 +78,8 @@ table {
 	--color-30-third: #BFC9DA;
 	--color-10: #3F72AF;
 	--color-10-second: #5387C7;
-	--color-text-dark: #242424;
-	--color-text-light: #FFFFFF;
+	--color-gc-2: #242424;
+	--color-gc-10: #FFFFFF;
 	--color-bg: #FFFFFF;
 	--color-border: rgba(0, 0, 0, 0.05);
 }
@@ -176,7 +176,7 @@ nav.main-header-nav a.nav-link:visited{
 	padding: var(--size-mid);
 	font-size: 3.5rem;
 	font-weight: 300;
-	color: var(--color-text-light);
+	color: var(--color-gc-10);
 	text-decoration: none;
 	display: block;
 }

@@ -1,3 +1,4 @@
+/* products */
 .products{
 	padding: var(--size-lrg) var(--size-con);
 	display: flex;
@@ -50,6 +51,16 @@
 	text-align: center;
 }
 
+.products-list.grid .fill-grid{
+	min-height: 25vh;
+	grid-column: 1/-1;
+	grid-row: 1/-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* product */
 .product{
 	padding: var(--size-sml);
 	display: flex;
@@ -91,10 +102,86 @@ a.product-button:visited{
 	font-size: 3.5rem;
 	font-weight: 500;
 	text-decoration: none;
+	border-radius: 6px;
 }
 
 .product-button:hover,
 a.product-button:hover{
+	background: var(--color-10-second);
+}
+
+/* featured products */
+.featured-products{
+	margin: var(--size-lrg) var(--size-con);
+	padding: var(--size-lrg) var(--size-mid);
+	display: flex;
+	flex-flow: column nowrap;
+	gap: var(--size-lrg);
+	align-items: center;
+	background: var(--color-30-second);
+}
+
+.featured-products-title{
+	font-size: 7rem;
+	font-weight: 500;
+	color: var(--color-gc-10);
+}
+
+.featured-products-list{
+	display: flex;
+	flex-flow: row wrap;
+	gap: var(--size-mid);
+}
+
+.featured-product{
+	min-width: 280px;
+	flex: 1;
+	padding: var(--size-mid);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: var(--size-sml);
+	background: var(--color-gc-10);
+	text-align: center;
+}
+
+.featured-product-image{
+	position: relative;
+	height: 250px;
+	width: 100%;
+}
+
+.featured-product-title{
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+
+.featured-product-description{
+	flex: 1;
+}
+
+.featured-product-buttons{
+	padding: var(--size-sml);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.featured-product-button,
+a.featured-product-button,
+a.featured-product-button:link,
+a.featured-product-button:visited{
+	padding: var(--size-sml);
+	background: var(--color-10);
+	color: #FFFFFF;
+	font-size: 3.5rem;
+	font-weight: 500;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.featured-product-button:hover,
+a.featured-product-button:hover{
 	background: var(--color-10-second);
 }
 
@@ -103,11 +190,3 @@ a.product-button:hover{
 	min-height: 100vh;
 	min-height: 100dvh;
 }
-
-/* @media only screen and (max-width: 1200px){
-	.products-list.grid{
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: var(--size-mid);
-	}
-} */

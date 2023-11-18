@@ -5,7 +5,8 @@ export const productsList = [
 		count: 1,
 		availability: 'available',
 		image: '/images/products/arri-alexa-sxt.jpg',
-		categories: ['cameras']
+		categories: ['cameras'],
+		featured: true
 	},
 	{
 		name: 'ARRI ALEXA Electronic Viewfinder EVF- 1',
@@ -13,7 +14,8 @@ export const productsList = [
 		count: 1,
 		availability: 'available',
 		image: '/images/products/arri-alexa-electronic-viewfinder-evf-1.jpg',
-		categories: ['accesories']
+		categories: [],
+		featured: true
 	},
 	{
 		name: 'ARRI ALEXA FSND Filter Set',
@@ -21,6 +23,7 @@ export const productsList = [
 		count: 1,
 		availability: 'available',
 		image: '/images/products/arri-alexa-fsnd-filter-set.jpg',
-		categories: ['accesories']
+		categories: [],
+		featured: true
 	}
 ]

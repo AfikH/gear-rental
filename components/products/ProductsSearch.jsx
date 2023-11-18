@@ -1,7 +1,8 @@
-const ProductsSearch = ({setSearchQuery}) => {
+const ProductsSearch = ({setSearchQuery, setLoading}) => {
 	let timer;
 
 	const handleSearch = (inputValue) => {
+		setLoading(true);
 		clearTimeout(timer);
 		timer = setTimeout(() => {
 			setSearchQuery(inputValue);

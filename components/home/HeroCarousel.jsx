@@ -21,18 +21,10 @@ const HeroCarousel = ({className, slideClassName}) => (
 		modules={[Autoplay, Pagination]}
 		style={{"--swiper-theme-color": "#FFFFFF"}}
 	>
-		<SwiperSlide className={slideClassName} data-slide-number="1">
-			Slide 1
-		</SwiperSlide>
-		<SwiperSlide className={slideClassName} data-slide-number="2">
-			Slide 2
-		</SwiperSlide>
-		<SwiperSlide className={slideClassName} data-slide-number="3">
-			Slide 3
-		</SwiperSlide>
-		<SwiperSlide className={slideClassName} data-slide-number="4">
-			Slide 4
-		</SwiperSlide>
+		<SwiperSlide className={slideClassName} data-slide-number="1"></SwiperSlide>
+		<SwiperSlide className={slideClassName} data-slide-number="2"></SwiperSlide>
+		<SwiperSlide className={slideClassName} data-slide-number="3"></SwiperSlide>
+		<SwiperSlide className={slideClassName} data-slide-number="4"></SwiperSlide>
 	</Swiper>
 );
 

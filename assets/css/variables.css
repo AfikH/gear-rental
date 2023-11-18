@@ -11,15 +11,24 @@
 
 	--color-60: #F7F7F9;
 	--color-60-second: #F9F7F7;
-	--color-30: #DBE2EF;
-	--color-30-second: #BFC9DA;
-	--color-30-third: #BFC9DA;
+	--color-30: #c0cde6;
+	--color-30-second: #acbedc;
+	--color-30-third: #9eb4db;
 	--color-10: #3F72AF;
 	--color-10-second: #5387C7;
-	--color-text-dark: #242424;
-	--color-text-light: #FFFFFF;
-	--color-bg: #FFFFFF;
-	--color-border: rgba(0, 0, 0, 0.05);
+	
+	--color-gc-0: #000000;
+	--color-gc-2: #252525;
+	--color-gc-3: #363636;
+	--color-gc-4: #474747;
+	--color-gc-5: #7A7A7A;
+	--color-gc-6: #A4A4A4;
+	--color-gc-7: #B5B5B5;
+	--color-gc-8: #C6C6C6;
+	--color-gc-9: #D7D7D7;
+	--color-gc-10: #FFFFFF;
+	
+	--color-border: var(--color-gc-9);
 }
 
 @media only screen and (max-width: 1200px) {

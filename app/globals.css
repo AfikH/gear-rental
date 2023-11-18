@@ -1,7 +1,9 @@
 @import url('../assets/css/reset.css');
 @import url('../assets/css/fonts.css');
 @import url('../assets/css/variables.css');
+@import url('../assets/css/loading.css');
 
+/* general */
 *{
 	box-sizing: border-box;
 }
@@ -80,7 +82,7 @@ nav.main-header-nav a.nav-link:visited{
 	padding: var(--size-mid);
 	font-size: 3.5rem;
 	font-weight: 300;
-	color: var(--color-text-light);
+	color: var(--color-gc-10);
 	text-decoration: none;
 	display: block;
 }
@@ -146,7 +148,7 @@ nav.main-header-nav a.nav-link.active{
 	display: flex;
 	flex-flow: column nowrap;
 	gap: var(--size-sml);
-	color: var(--color-text-light);
+	color: var(--color-gc-10);
 }
 
 .hero h1{
