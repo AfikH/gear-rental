@@ -1,11 +1,18 @@
 const ProductsSearch = ({setSearchQuery, setLoading}) => {
-	let timer;
+	let timer = undefined;
 
 	const handleSearch = (inputValue) => {
-		setLoading(true);
+		console.log('handleSearch');
 		clearTimeout(timer);
+		
+		if(!timer){
+			console.log('setLoading');
+			setLoading(true);
+		}
+		
 		timer = setTimeout(() => {
-			setSearchQuery(inputValue);
+			console.log('timer');
+			setSearchQuery(inputValue)
 		}, 1000);
 	}
 
