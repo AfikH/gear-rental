@@ -12,7 +12,7 @@ const ProductsSearch = ({setSearchQuery, setLoading}) => {
 		
 		timer = setTimeout(() => {
 			console.log('timer');
-			setSearchQuery(inputValue)
+			setSearchQuery(inputValue);
 		}, 1000);
 	}
 

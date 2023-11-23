@@ -62,3 +62,7 @@
 .carouselOverlay p{
 	font-size: 6rem;
 }
+
+.featuredProducts{
+	margin-bottom: 0 !important;
+}

@@ -28,7 +28,7 @@ const MainHeader = () => {
 	return(
 		<div className={`main-header-container ${navActive && 'nav-active'}`}>
 			<div className="main-header-top">
-				<Link href="/contact">Contact Us</Link>
+				<Link href="/contact-us">Contact Us</Link>
 			</div>
 			<header className="main-header">
 				<div className="main-header-logo">

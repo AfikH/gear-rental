@@ -13,7 +13,7 @@ const Home = () => (
 				<p>Professional cinematography & photography gear for rent.</p>
 			</article>
 		</section>
-		<FeaturedProducts className="featured-products-home" />
+		<FeaturedProducts className={styles.featuredProducts} />
 		<Products className="products-home" />
 	</div>
 );
