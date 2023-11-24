@@ -27,6 +27,9 @@
 	--color-gc-8: #C6C6C6;
 	--color-gc-9: #D7D7D7;
 	--color-gc-10: #FFFFFF;
+
+	--color-light: #FFFFFF;
+	--color-dark: #000000;
 	
 	--color-border: var(--color-gc-9);
 }
