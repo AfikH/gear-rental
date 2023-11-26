@@ -171,6 +171,66 @@ nav.main-header-nav a.nav-link.active{
 	z-index: -1;
 }
 
+/* contact-form */
+.contact-form{
+    margin: 0 var(--size-con) var(--size-lrg) var(--size-con);
+    padding: var(--size-big);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--size-mid);
+}
+
+.contact-form-intro{
+    padding: var(--size-mid) 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--size-sml);
+}
+
+.contact-form-intro-title{
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.contact-form-intro-sub-title{
+    font-size: 4rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: var(--size-tin) var(--size-sml);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.contact-form textarea{
+    height: 150px;
+    min-height: 50px;
+    max-height: 200px;
+    resize: horizontal;
+}
+
+.contact-form button{
+    padding: var(--size-sml);
+    background: var(--color-10);
+    font-family: inherit;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--color-light);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover{
+    background: var(--color-10-second);
+}
+
 @media only screen and (max-width: 900px){
 	html{
 		font-size: 3.5pt;

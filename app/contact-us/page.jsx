@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import ContactForm from '../../components/shared/ContactForm';
 
 const ContactUs = () => (
     <div className="page">
@@ -13,17 +14,7 @@ const ContactUs = () => (
                 <span>email@example.com</span>
             </a>
         </div>
-        <form className={styles.contactForm}>
-            <div className={styles.contactFormIntro}>
-                <span className={styles.contactFormIntroTitle}>Contact Form</span>
-                <span className={styles.contactFormIntroSubTitle}>Leave your details and what you're looking for and we'll make contact with you.</span>
-            </div>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="email" placeholder="Email" />
-            <input type="text" name="phone-number" placeholder="Phone Number" />
-            <textarea name="message" placeholder="Write your message..."></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <ContactForm />
     </div>
 )
 
