@@ -26,7 +26,7 @@ const ContactForm = ({className}) => {
         <form className={`contact-form ${className}`} onSubmit={e => handleSubmit(e)}>
             <div className="contact-form-intro">
                 <span className="contact-form-intro-title">Contact Form</span>
-                <span className="contact-form-intro-sub-title">Leave your details and what you're looking for and we'll make contact with you.</span>
+                <span className="contact-form-intro-sub-title">Leave your details and what you&apos;re looking for and we&apos;ll make contact with you.</span>
             </div>
             <input type="text" name="name" placeholder="Name" />
             <input type="text" name="email" placeholder="Email" />
